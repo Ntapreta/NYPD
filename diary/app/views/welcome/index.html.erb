@@ -1,0 +1,32 @@
+<h1>NYPD Response Aid Camp</h1>
+<p>No time to call 311 to report a complaint? Don't worry, we can help you!</p>
+<body>
+		<div>
+			<h1> Related Helpful Websites </h1>
+			<% for entry in @entries %>
+			<h2><%= entry.title %></h2>
+			<p><%= entry.date %></p>
+			<p><%= entry.contents %></p>
+			<% end %>
+
+
+<% for url, name in @websites %>
+<li><a href="<%= url %>"><%= name %></a></li>
+<% end %>
+			</ul>
+		</div>
+		<img src="http://www.funnyautos.com/funny-pictures/funny-police-bike-01.jpg"/>
+
+		<h1> About Our Camp </h1>
+			<div>
+				<h2>Overview of Citizen Complaints to NYPD in 2014</h2>
+					<p> 11.17.2014</p>
+					<p> If you are a New York City resident, you can now submit your concerns and complaints now to the Responsive Traffic Camp for NYPD! </p>
+				<h2> Check it out!</h2>
+					<p> 11. 17. 2014 </p>
+					<p> We received your application! Thank you the submission! </p>
+				<h2> Our most prevalent problems in NYC...</h2>
+				<p> 01.01.2014 </p>
+				<p> Noise Complaints, Traffic Jam, Red Light Malfunction, Emergency </p>
+			</div>
+	</body>
